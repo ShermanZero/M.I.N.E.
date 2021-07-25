@@ -3,16 +3,58 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>M.I.N.E. GDD</title>
+    <title>M.I.N.E. by ShermanZero</title>
     <link rel="stylesheet" href="https://stackedit.io/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap" rel="stylesheet">
   </head>
+
+  <style>
+    body {
+      user-select: none;
+    }
+
+    table.custom {
+      /* border: 1px solid white; */
+      box-shadow: 0px 0px 8px rgba(0, 0, 0, .3);
+      border-radius: 12px;
+    }
+
+    table.custom > thead {
+      font-style: oblique;
+      font-weight: bold;
+      text-transform: capitalize;
+    }
+
+    table.custom > tbody > tr:nth-child(odd) {
+      background-color: rgb(242, 242, 242);
+    }
+
+    table.custom > tbody > tr > td:nth-child(odd) {
+      font-weight: bolder;
+      font-style: oblique;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    h2 {
+      background-color: rgba(38, 38, 48);
+      border-radius: 8px;
+      padding: 12px;
+      color: whitesmoke;
+    }
+  </style>
 
   <body class="stackedit">
     <div class="stackedit__left">
       <div class="stackedit__toc">
         <ul>
           <li>
-            <a href="#m.i.n.e.-gdd">M.I.N.E. GDD</a>
+            <a href="#m.i.n.e.-gdd">M.I.N.E.</a>
             <ul>
               <li><a href="#overview">Overview</a></li>
               <li><a href="#gameplay--mechanics">GamePlay & Mechanics</a></li>
@@ -44,7 +86,6 @@
             title="The galactic republic comprised of the four major groups: Materials, Innovation, Nature, and Energy, also known as MatInNaEn and also, also known as just the name of the game.  Why does everything have to have an acronym?"
             >M.I.N.E.</abbr
           >
-          GDD
         </h1>
         <p>
           Thanks for coming over to <strong>GitHub</strong>! Check out the table of contents on the left, and hover over anything that
@@ -552,12 +593,28 @@
         </blockquote>
         <h3 id="distribution">Distribution</h3>
         <blockquote>
-          <ul>
-            <li>± $217,500 | $7,500 per month for 29 additional months as sustainment-salary</li>
-            <li>± $150,000 | Marketing at target of 20-30% cost of production</li>
-            <li>± $50,000 | Art &amp; Sound outsourcing/licensing</li>
-            <li>± $100,000 | Unforeseen/extended/misc. expenses</li>
-          </ul>
+          <table class="custom">
+            <thead>
+              <td>amount</td>
+              <td>purpose</td>
+            </thead>
+            <tr>
+              <td>± $217,500</td>
+              <td>$7,500 per month for 29 additional months as sustainment-salary</td>
+            </tr>
+            <tr>
+              <td>± $150,000</td>
+              <td>Marketing at target of 20-30% cost of production</td>
+            </tr>
+            <tr>
+              <td>± $50,000</td>
+              <td>Art &amp; Sound outsourcing/licensing</td>
+            </tr>
+            <tr>
+              <td>± $100,000</td>
+              <td>Unforeseen/extended/misc. expenses</td>
+            </tr>
+          </table>
         </blockquote>
         <h2 id="screenshots">Screenshots</h2>
         <blockquote>
@@ -587,9 +644,9 @@
             enjoying games or making them myself.
           </p>
           <p>
-            I consider myself a professional developer, even though I don’t have a fancy piece of paper that says so. I
+            I consider myself a professional developer, even though I don’t have a <span style="font-family: 'Sedgwick Ave'; font-size: 1em;">fancy</span> piece of paper that says so. I
             have plenty of experience using a wide-array of languages. I started my programming journey when I was nine
-            years old (I’m 24 now) on a TI-84 graphing calculator. Since then, I’ve worked with Java, C#, Python, Lua,
+            years old (<em>I’m 24 now</em>) on a TI-84 graphing calculator. Since then, I’ve worked with Java, C#, Python, Lua,
             Javascript, PHP, NodeJS, HTML, CSS, SASS, ReactJS, Svelte, MongoDB, and many, many more languages,
             libraries, and tools. I’ve known for a very long time that my brain is hardwired for coding, and
             learning/using programming languages and concepts is undeniably my best skill.
@@ -620,7 +677,6 @@
           </p>
         </blockquote>
         <h2 id="links">Links</h2>
-        <p>A compiled list of relevant links from my development journey</p>
         <h3 id="source-code">Source Code</h3>
         <blockquote>
           <p>
@@ -801,11 +857,123 @@
         <hr />
         <blockquote>
           <p>
-            Thanks again,<br />
-            ~ <abbr title=":)">Kieran</abbr>
+            Thank you again,<br />
+            <abbr title=":)"><span id="name" style="font-size: 1.5em; font-family: 'Mr Dafoe', cursive; line-height: 0em;">Kieran S.</span></abbr></abbr>
           </p>
         </blockquote>
+        <br>
+
+
+        <style>
+          #prompt {
+            opacity: 0;
+            transition: all .23s ease-out;
+            border-radius: 12px;
+            box-shadow: 0px 0px 8px rgba(0, 0, 0, .4);
+            margin: auto;
+            border: none !important;
+            outline: none !important;
+            width: 100%;
+
+            background-color: rgb(230, 164, 144);
+          }
+
+          #prompt.animate {
+            opacity: 1;
+          }
+
+          #prompt.correct {
+            background-color: rgb(161, 230, 144);
+          }
+
+          #prompt > div.question {
+            background-color: rgba(38, 38, 48);
+            padding-top: 1em;
+            padding-bottom: 2em;
+            border-radius: 8px;
+            color: whitesmoke;
+            text-align: center;
+            margin-bottom: -1em;
+          }
+
+          #prompt > input {
+            position: relative;
+            border: 1px solid gray;
+            border-radius: 8px;
+            padding: 1em 0px;
+            outline: none;
+            margin: auto;
+            margin-left: 4%;
+            padding-left: 2%;
+            width: 90%;
+            transition: all .1s ease-in-out;
+            font-family: monospace;
+          }
+
+          #prompt > input:focus {
+            color: whitesmoke;
+            border-color: whitesmoke;
+            background-color: rgba(38, 38, 48);
+          }
+
+          #answer {
+            display: block;
+            text-align: center;
+            height: 100%;
+            padding: .75em;
+
+            font-weight: bold;
+
+            transition: all .1s ease-in-out;
+          }
+
+          #success {
+            opacity: 1;
+          }
+
+        </style>
+        <div id="prompt" class="">
+          <div class="question">
+            Oh right, quick question before I go.  I forgot, what does <strong>M.I.N.E.</strong> stand for again?
+          </div>
+          <input type="text" name="" id="user-input" autocomplete="off" >
+          <div id="answer">
+              <span >
+                <code id="hint"></code>
+            </span>
+          </div>
+        </div>
       </div>
     </div>
+
+    <!-- materials innovation nature energy -->
+
+    <script>
+      window.onload = () => {
+        let prompt = document.getElementById("prompt");
+        let name = document.getElementById("name");
+        let hint = document.getElementById("hint");
+        let userInput = document.getElementById("user-input");
+
+        let regexHint = "/^[mM]aterials{1}(?<=[mM]aterials{1})([ ,]+[iI]nnovation{1})(?<=[iI]nnovation{1})([ ,]+[nN]ature{1})(?<=[nN]ature{1})([ ,]+[eE]nergy{1})$/gi"
+        let regex = /^[mM]aterials{1}(?<=[mM]aterials{1})([ ,]+[iI]nnovation{1})(?<=[iI]nnovation{1})([ ,]+[nN]ature{1})(?<=[nN]ature{1})([ ,]+[eE]nergy{1})$/gi
+        hint.textContent = regexHint;
+
+        name.addEventListener("mouseleave", ev => {
+          prompt.classList.add("animate");
+        });
+
+        userInput.addEventListener("input", (ev) => {
+          let match = String(ev.target.value).match(regex);
+          if (match) {
+            hint.textContent = "Great job!";
+            prompt.classList.add("correct");
+          } else {
+            hint.textContent = regexHint;
+            prompt.classList.remove("correct");
+          }
+        });
+      }
+    </script>
   </body>
 </html>
